@@ -6,4 +6,5 @@ const App = (props) => {
   return <h1>Hello World</h1>;
 };
 
-ReactDom.render(<App />, document.querySelector("#root"));
+const root = ReactDom.createRoot(document.querySelector("#root"));
+root.render(<App />)
